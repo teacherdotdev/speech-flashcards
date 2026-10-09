@@ -3,13 +3,12 @@
 // Run after adding or changing words: bun run pictograms
 import { existsSync } from "node:fs";
 import path from "node:path";
-import { PACKS } from "#lib/packs/index.ts";
+import { PACKS, pictogramIds } from "#lib/packs/index.ts";
 
 const folder = path.resolve(import.meta.dirname, "../src/lib/pictograms");
+// Custom pictures ("custom/...") are drawn by us, so only ARASAAC ids are downloaded.
 const ids = new Set(
-  PACKS.flatMap((pack) =>
-    Object.values(pack.cards).flatMap((cards) => cards.map((c) => c.pictogram)),
-  ),
+  PACKS.flatMap(pictogramIds).filter((id) => typeof id === "number"),
 );
 
 let downloaded = 0;

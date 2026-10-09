@@ -9,10 +9,15 @@ export const POSITION_LABELS: Record<Position, { name: string; hint: string }> =
     final: { name: "Final", hint: "end of the word" },
   };
 
+/**
+ * An ARASAAC pictogram id, saved as src/lib/pictograms/{id}.png, or one of our
+ * own pictures in src/lib/pictograms/custom/, e.g. "custom/red-square".
+ */
+export type PictogramId = number | `custom/${string}`;
+
 export interface Card {
   word: string;
-  /** ARASAAC pictogram id; its picture is saved as src/lib/pictograms/{id}.png. */
-  pictogram: number;
+  pictogram: PictogramId;
 }
 
 export interface SoundPack {

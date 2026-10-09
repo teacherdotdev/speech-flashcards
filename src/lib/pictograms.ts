@@ -1,23 +1,24 @@
 // Pictures are bundled with the app (see scripts/download-pictograms.ts), and
 // once loaded they are kept in IndexedDB, so later visits skip the network.
 import { forgetImagesExcept, getImage, saveImage } from "#lib/image-store.ts";
+import type { PictogramId } from "#lib/types.ts";
 
-const files = import.meta.glob<string>("./pictograms/*.png", {
+const files = import.meta.glob<string>("./pictograms/**/*.png", {
   eager: true,
   query: "?url",
   import: "default",
 });
 
 /** Pictures already loaded this visit, as in-memory URLs ready to show. */
-const ready = new Map<number, string>();
+const ready = new Map<PictogramId, string>();
 
-function bundledUrl(id: number): string {
+function bundledUrl(id: PictogramId): string {
   const url = files[`./pictograms/${id}.png`];
   if (!url) throw new Error(`Missing ${id}.png; run: bun run pictograms`);
   return url;
 }
 
-export function pictogramUrl(id: number): string {
+export function pictogramUrl(id: PictogramId): string {
   return ready.get(id) ?? bundledUrl(id);
 }
 
@@ -29,7 +30,7 @@ let tidiedUp = false;
  * number of pictures finished so far. Rejects if a download fails.
  */
 export async function loadPictograms(
-  ids: number[],
+  ids: PictogramId[],
   onProgress: (done: number) => void,
 ) {
   if (!tidiedUp) {

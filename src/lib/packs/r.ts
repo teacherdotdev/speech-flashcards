@@ -9,7 +9,7 @@ export const r: SoundPack = {
       { word: "right", pictogram: 4624 },
       { word: "read", pictogram: 31680 },
       { word: "rock", pictogram: 6594 },
-      { word: "red", pictogram: 2808 },
+      { word: "red", pictogram: "custom/red-square" },
       { word: "room", pictogram: 33074 },
       { word: "road", pictogram: 2302 },
       { word: "run", pictogram: 28439 },
