@@ -4,7 +4,12 @@
   const link = "font-semibold text-accent-dark underline underline-offset-2";
 </script>
 
-<InfoPage title="Privacy" lede="What we collect, what we don't, and why.">
+<InfoPage
+  path="/privacy"
+  description="Speech Flashcards has no accounts, no ads and no analytics. Your last choices stay in your browser and nothing is sent anywhere."
+  title="Privacy"
+  lede="What we collect, what we don't, and why."
+>
   <section
     class="flex flex-col gap-3 rounded-2xl bg-white p-5 leading-relaxed text-slate-700 shadow-sm"
   >

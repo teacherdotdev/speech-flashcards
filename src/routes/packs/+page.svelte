@@ -2,11 +2,14 @@
   import InfoPage from "#lib/components/InfoPage.svelte";
   import { PACKS } from "#lib/packs/index.ts";
   import { pictogramUrl } from "#lib/pictograms.ts";
-  import { loadSettings } from "#lib/settings.ts";
+  import { onMount } from "svelte";
+  import { DEFAULT_SETTINGS, loadSettings } from "#lib/settings.ts";
   import { POSITIONS, POSITION_LABELS } from "#lib/types.ts";
 
-  // Start on the sound the teacher last practiced.
-  let packId = $state(loadSettings().packId);
+  // Prerendered with the first pack; once loaded, switch to the sound the
+  // teacher last practiced, which only their device knows.
+  let packId = $state(DEFAULT_SETTINGS.packId);
+  onMount(() => (packId = loadSettings().packId));
   let showPictures = $state(false);
   let dialog = $state<HTMLDialogElement>();
 
@@ -38,6 +41,8 @@
 </script>
 
 <InfoPage
+  path="/packs"
+  description="Every word in all 20 speech sound packs, sorted by initial, medial and final position, with a picture for each word."
   title="Flashcard packs"
   lede="Every word in every sound pack, sorted by where the sound falls in the word."
 >

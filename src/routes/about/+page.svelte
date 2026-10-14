@@ -8,6 +8,8 @@
 </script>
 
 <InfoPage
+  path="/about"
+  description="Free picture flashcards for speech sound practice, built by the teacher.dev community. Zero paywalls, zero ads, zero tracking."
   title="About"
   lede="Picture flashcards for speech sound practice, free for anyone to use."
 >
