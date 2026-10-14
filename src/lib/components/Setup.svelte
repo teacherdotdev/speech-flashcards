@@ -49,7 +49,7 @@
       <h1 class="text-4xl font-bold text-accent-dark">Speech Flashcards</h1>
       <p class="max-w-md text-lg leading-snug text-slate-600">
         Picture cards for speech sound practice. Pick a sound, choose where it
-        falls in the word, and tap through a fresh deck every time.
+        falls in the word, and tap through a deck of digital flashcards.
       </p>
     </div>
     <div class="hidden shrink-0 items-start pr-4 sm:flex" aria-hidden="true">
@@ -158,7 +158,7 @@
       {cardCount === 0 ? "Pick a position" : `Start · ${cardCount} cards`}
     </button>
     <p class="text-sm leading-snug text-slate-600">
-      Cards shuffle endlessly and a word never comes right back. Tap the card or
+      Cards shuffle endlessly. Tap the card or
       press <kbd class={key}>→</kbd> for the next one,
       <kbd class={key}>←</kbd> to go back, and
       <kbd class={key}>Esc</kbd> to return here.
