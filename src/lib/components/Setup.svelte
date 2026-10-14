@@ -158,8 +158,8 @@
       {cardCount === 0 ? "Pick a position" : `Start · ${cardCount} cards`}
     </button>
     <p class="text-sm leading-snug text-slate-600">
-      Cards shuffle endlessly. Tap the card or
-      press <kbd class={key}>→</kbd> for the next one,
+      Cards shuffle endlessly. Tap the card or press <kbd class={key}>→</kbd>
+      for the next one,
       <kbd class={key}>←</kbd> to go back, and
       <kbd class={key}>Esc</kbd> to return here.
     </p>

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import Attribution from "#lib/components/Attribution.svelte";
   import InfoPage from "#lib/components/InfoPage.svelte";
 
@@ -44,9 +45,13 @@
   <section class={card} aria-labelledby="words-title">
     <h2 id="words-title" class="text-lg font-bold">Words &amp; pictures</h2>
     <p class="mt-2 leading-relaxed text-slate-700">
-      The word lists come from a practicing speech therapist, sorted by where
-      the target sound falls in the word: at the beginning, in the middle, or at
-      the end.
+      The R pack was hand-picked by Natalie, a practicing speech therapist.
+      Thank you, Natalie! The other packs are built from the Dale-Chall list of
+      about 3,000 words most 4th graders know, using the CMU Pronouncing
+      Dictionary to find where the target sound falls in each word: at the
+      beginning, in the middle, or at the end. Only words with a clear picture
+      are kept. See every word on the
+      <a class={link} href={resolve("/packs")}>Flashcard packs</a> page.
     </p>
     <Attribution class="mt-3 leading-relaxed text-slate-700" />
   </section>

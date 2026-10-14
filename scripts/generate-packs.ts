@@ -361,10 +361,16 @@ ${sections.join("\n")}
 
 /** Dale-Chall words that aren't right for children's practice cards. */
 const LEFT_OUT = new Set(
-  "beer bullet cigar damn death devil drunk gun hell kill pistol pussy rifle tobacco whisky wine".split(
+  "beer breast bullet cigar damn death devil drunk gun hell kill pistol pussy rifle tobacco whisky wine".split(
     " ",
   ),
 );
+
+/**
+ * Words whose best ARASAAC match isn't the picture children should see, and
+ * the picture to use instead: "chest" matches a bare-chest anatomy drawing.
+ */
+const PICTURE_FOR: Record<string, number> = { chest: 5966 };
 
 const { words } = await loadPronunciations();
 
@@ -424,6 +430,10 @@ const placed = SOUNDS.map((sound) => ({
 const pictures = await findPictures([
   ...new Set(placed.flatMap((p) => p.words.map((w) => w.word))),
 ]);
+for (const [word, id] of Object.entries(PICTURE_FOR)) {
+  const picture = pictures.get(word);
+  if (picture) pictures.set(word, { ...picture, id });
+}
 
 const packs = [];
 for (const { sound, words: found } of placed) {

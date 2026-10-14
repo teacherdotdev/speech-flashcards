@@ -18,7 +18,7 @@ export const ch: SoundPack = {
       { word: "chart", pictogram: 9174 },
       { word: "check", pictogram: 39555 },
       { word: "cheek", pictogram: 2919 },
-      { word: "chest", pictogram: 2853 },
+      { word: "chest", pictogram: 5966 },
       { word: "chick", pictogram: 34076 },
       { word: "chill", pictogram: 26384 },
       { word: "chin", pictogram: 2991 },

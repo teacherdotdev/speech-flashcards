@@ -34,8 +34,8 @@ export const sBlends: SoundPack = {
       { word: "breakfast", pictogram: 4626 }, // st
       { word: "forest", pictogram: 2666 }, // st
       { word: "blast", pictogram: 30954 }, // st
-      { word: "breast", pictogram: 2853 }, // st
       { word: "burst", pictogram: 30956 }, // st
+      { word: "chest", pictogram: 5966 }, // st
       { word: "coast", pictogram: 2826 }, // st
       { word: "cost", pictogram: 9874 }, // st
       { word: "feast", pictogram: 37517 }, // st
