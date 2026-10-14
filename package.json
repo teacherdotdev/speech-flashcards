@@ -11,6 +11,8 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test": "bun test src",
     "pictograms": "bun scripts/download-pictograms.ts",
+    "pronunciations": "bun scripts/pronunciations.ts",
+    "generate-packs": "bun scripts/generate-packs.ts",
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write ."
   },

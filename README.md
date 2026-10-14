@@ -12,11 +12,22 @@ mix), then taps through cards for as long as the session lasts.
 - **Remembers** the last pack and positions (`localStorage`) and keeps loaded
   pictures (IndexedDB) on the device. Nothing is sent anywhere.
 
-## Adding a sound pack
+## Sound packs
 
-1. Copy `src/lib/packs/r.ts` to e.g. `s.ts` and fill in the words. Leave out a
-   position if the sound has no words for it.
-2. Add it to `PACKS` in `src/lib/packs/index.ts`.
+`r.ts` is a speech therapist's hand-picked list. The other packs are generated
+by `bun run generate-packs` (`scripts/generate-packs.ts`): words from the
+Dale-Chall list of words most 4th graders know, placed by sound and position
+using the CMU Pronouncing Dictionary, that have an ARASAAC picture, nouns
+first, up to 20 per position. The word lists are downloaded into `.word-data/`
+(not committed), along with `review.html`, which shows every candidate word with
+its picture. To hand-edit a generated pack, delete its first line so the script
+leaves it alone; each pack lists more words in an `// Also:` comment.
+
+To add a sound, add it to `SOUNDS` in the script (or copy `r.ts` and fill in
+words by hand; leave out a position if the sound has no words for it), then:
+
+1. Run `bun run generate-packs`.
+2. Add the pack to `PACKS` in `src/lib/packs/index.ts`.
 3. Run `bun run pictograms` to save the new pictures into `src/lib/pictograms/`.
    `bun test src` fails if any card's picture is missing.
 
