@@ -9,8 +9,14 @@ export interface Settings {
 
 const KEY = "speech-flashcards:settings";
 
+/** What a first visit starts on, and what pages are prerendered with. */
+export const DEFAULT_SETTINGS: Settings = {
+  packId: PACKS[0].id,
+  positions: ["initial"],
+};
+
 export function loadSettings(): Settings {
-  const fallback: Settings = { packId: PACKS[0].id, positions: ["initial"] };
+  const fallback = DEFAULT_SETTINGS;
   try {
     const saved = JSON.parse(localStorage.getItem(KEY) ?? "null");
     const pack = PACKS.find((p) => p.id === saved?.packId);

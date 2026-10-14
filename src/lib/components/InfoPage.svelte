@@ -3,17 +3,26 @@
 <script lang="ts">
   import type { Snippet } from "svelte";
   import { resolve } from "$app/paths";
+  import type { PagePath } from "#lib/site.ts";
+  import PageMeta from "./PageMeta.svelte";
 
   let {
+    path,
     title,
     lede,
+    description,
     children,
-  }: { title: string; lede: string; children: Snippet } = $props();
+  }: {
+    path: PagePath;
+    title: string;
+    lede: string;
+    /** The snippet search results show for this page. */
+    description: string;
+    children: Snippet;
+  } = $props();
 </script>
 
-<svelte:head>
-  <title>{title} · Speech Flashcards</title>
-</svelte:head>
+<PageMeta {path} title="{title} · Speech Flashcards" {description} />
 
 <div class="min-h-screen-safe">
   <header

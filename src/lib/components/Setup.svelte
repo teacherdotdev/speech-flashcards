@@ -1,21 +1,27 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import { resolve } from "$app/paths";
   import { PACKS, cardsFor } from "#lib/packs/index.ts";
   import { pictogramUrl } from "#lib/pictograms.ts";
-  import type { Settings } from "#lib/settings.ts";
+  import {
+    DEFAULT_SETTINGS,
+    loadSettings,
+    type Settings,
+  } from "#lib/settings.ts";
   import { POSITIONS, POSITION_LABELS, type Position } from "#lib/types.ts";
   import Attribution from "./Attribution.svelte";
+  import HowItWorks, { INFO_HASH } from "./HowItWorks.svelte";
 
-  let {
-    initial,
-    onStart,
-  }: { initial: Settings; onStart: (settings: Settings) => void } = $props();
+  let { onStart }: { onStart: (settings: Settings) => void } = $props();
 
-  // Svelte warns about capturing a prop's first value; that's what we want here.
-  // svelte-ignore state_referenced_locally
-  let packId = $state(initial.packId);
-  // svelte-ignore state_referenced_locally
-  let positions = $state<Position[]>([...initial.positions]);
+  // The page is prerendered with the defaults; the teacher's last choices are
+  // only on their device, so they replace the defaults once it has loaded.
+  let packId = $state(DEFAULT_SETTINGS.packId);
+  let positions = $state<Position[]>([...DEFAULT_SETTINGS.positions]);
+
+  onMount(() => {
+    ({ packId, positions } = loadSettings());
+  });
 
   let pack = $derived(PACKS.find((p) => p.id === packId) ?? PACKS[0]);
   let cardCount = $derived(cardsFor(pack, positions).length);
@@ -42,7 +48,7 @@
 </script>
 
 <main
-  class="mx-auto flex min-h-screen-safe max-w-3xl flex-col gap-8 px-4 pt-10 pb-6"
+  class="mx-auto flex min-h-screen-safe max-w-3xl flex-col gap-8 px-4 pt-10 pb-20"
 >
   <header class="flex items-center justify-between gap-6">
     <div class="flex min-w-0 flex-1 flex-col gap-3">
@@ -180,6 +186,7 @@
         <img src="/teacher-dev-logo.svg" alt="" width="20" height="20" />
         Built by teacher.dev
       </a>
+      <a href={INFO_HASH} class="hover:underline">How it works</a>
       <a href={resolve("/packs")} class="hover:underline">Flashcard packs</a>
       <a href={resolve("/about")} class="hover:underline">About</a>
       <a href={resolve("/privacy")} class="hover:underline">Privacy</a>
@@ -187,3 +194,5 @@
     <Attribution />
   </footer>
 </main>
+
+<HowItWorks />
