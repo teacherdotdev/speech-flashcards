@@ -10,7 +10,7 @@
   } from "#lib/settings.ts";
   import { POSITIONS, POSITION_LABELS, type Position } from "#lib/types.ts";
   import Attribution from "./Attribution.svelte";
-  import HowItWorks, { INFO_HASH } from "./HowItWorks.svelte";
+  import HowItWorks from "./HowItWorks.svelte";
 
   let { onStart }: { onStart: (settings: Settings) => void } = $props();
 
@@ -186,7 +186,6 @@
         <img src="/teacher-dev-logo.svg" alt="" width="20" height="20" />
         Built by teacher.dev
       </a>
-      <a href={INFO_HASH} class="hover:underline">How it works</a>
       <a href={resolve("/packs")} class="hover:underline">Flashcard packs</a>
       <a href={resolve("/about")} class="hover:underline">About</a>
       <a href={resolve("/privacy")} class="hover:underline">Privacy</a>

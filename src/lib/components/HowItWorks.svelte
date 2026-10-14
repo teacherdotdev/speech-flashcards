@@ -1,8 +1,8 @@
 <script lang="ts" module>
   import { PACKS } from "#lib/packs/index.ts";
 
-  /** The link that opens the panel, from this page or any other. */
-  export const INFO_HASH = "#how-it-works";
+  /** The link that opens the panel straight away. */
+  const INFO_HASH = "#how-it-works";
 
   /** The questions answered at the end, also given to search engines. */
   export const FAQ = [
@@ -41,7 +41,7 @@
 
 <script lang="ts">
   /**
-   * The help button in the bottom-left corner and the panel it opens: what
+   * The help button in the bottom-right corner and the panel it opens: what
    * Speech Flashcards is, how to use it and what teachers ask about it.
    *
    * The panel is always in the document, and closing it only hides it. The
@@ -100,7 +100,7 @@
 
 <button
   type="button"
-  class="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] left-[max(1rem,env(safe-area-inset-left))] z-40 grid size-11 place-items-center rounded-full bg-white/95 text-slate-700 shadow-lg ring-1 ring-slate-200 hover:bg-white"
+  class="fixed right-[max(1rem,env(safe-area-inset-right))] bottom-[max(1rem,env(safe-area-inset-bottom))] z-40 grid size-11 place-items-center rounded-full bg-white/95 text-slate-700 shadow-lg ring-1 ring-slate-200 hover:bg-white"
   aria-label="How it works"
   title="How it works"
   aria-expanded={open}

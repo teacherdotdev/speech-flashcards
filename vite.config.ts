@@ -15,13 +15,6 @@ export default defineConfig({
           filename.split(/[/\\]/).includes("node_modules") ? undefined : true,
       },
       adapter: adapter(),
-      prerender: {
-        // #how-it-works opens the How it works panel rather than naming an
-        // element, so nothing on the page carries that id on purpose.
-        handleMissingId: ({ id, message }) => {
-          if (id !== "how-it-works") throw new Error(message);
-        },
-      },
     }),
   ],
 });
