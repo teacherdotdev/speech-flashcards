@@ -361,7 +361,7 @@ ${sections.join("\n")}
 
 /** Dale-Chall words that aren't right for children's practice cards. */
 const LEFT_OUT = new Set(
-  "beer breast bullet cigar damn death devil drunk gun hell kill pistol pussy rifle tobacco whisky wine".split(
+  "beer blast blood breast bullet cigar clothing cluck crook damn death devil drove drunk gay gun gunpowder hell kill pistol pussy rifle single soldier splash tobacco ugly whisky wine".split(
     " ",
   ),
 );

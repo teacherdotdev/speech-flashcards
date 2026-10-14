@@ -44,7 +44,6 @@ export const v: SoundPack = {
     ],
     final: [
       { word: "cave", pictogram: 2729 },
-      { word: "drove", pictogram: 10248 },
       { word: "glove", pictogram: 8353 },
       { word: "grave", pictogram: 7821 },
       { word: "grove", pictogram: 32462 },
@@ -63,7 +62,8 @@ export const v: SoundPack = {
       { word: "dive", pictogram: 25166 },
       { word: "leave", pictogram: 39879 },
       { word: "move", pictogram: 24819 },
-      // Also: save, serve, shave, weave, improve, receive, remove, brave, above, alive, five, of
+      { word: "save", pictogram: 4556 },
+      // Also: serve, shave, weave, improve, receive, remove, brave, above, alive, five, of
     ],
   },
 };

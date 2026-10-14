@@ -50,12 +50,11 @@ export const d: SoundPack = {
       { word: "codfish", pictogram: 25835 },
       { word: "freedom", pictogram: 11488 },
       { word: "goodness", pictogram: 37231 },
-      // Also: handle, headache, lady, leader, needle, puddle, radish, reading, reindeer, riddle, riding, saddle, sadness, shadow, shoulder, sidewalk, soda, adventure, candlestick, conductor, granddaughter, gunpowder, indian, underwear, order, study, thunder, admire, understand, today, yesterday, cloudy, golden, middle, ready, windy, goodbye, monday, sunday, thursday, tuesday, under, wednesday, nobody, saturday, somebody, anybody, everybody
+      // Also: handle, headache, lady, leader, needle, puddle, radish, reading, reindeer, riddle, riding, saddle, sadness, shadow, shoulder, sidewalk, soda, adventure, candlestick, conductor, granddaughter, indian, underwear, order, study, thunder, admire, understand, today, yesterday, cloudy, golden, middle, ready, windy, goodbye, monday, sunday, thursday, tuesday, under, wednesday, nobody, saturday, somebody, anybody, everybody
     ],
     final: [
       { word: "bed", pictogram: 25900 },
       { word: "bird", pictogram: 2490 },
-      { word: "blood", pictogram: 2803 },
       { word: "bread", pictogram: 2494 },
       { word: "food", pictogram: 4610 },
       { word: "kid", pictogram: 27509 },
@@ -73,7 +72,8 @@ export const d: SoundPack = {
       { word: "card", pictogram: 17208 },
       { word: "cord", pictogram: 15363 },
       { word: "crowd", pictogram: 38445 },
-      // Also: flood, guide, head, herd, hood, lid, maid, mud, pad, road, slide, spade, speed, sword, thread, word, childhood, cupboard, custard, forehead, graveyard, hillside, lizard, parade, railroad, shepherd, neighborhood, aid, cloud, hide, need, read, add, bleed, board, feed, glide, lead, load, ride, spread, record, bad, hard, odd, sad, inside, outside, upward, good, proud, red, third, wide, ahead, wicked, excited, god
+      { word: "flood", pictogram: 4669 },
+      // Also: guide, head, herd, hood, lid, maid, mud, pad, road, slide, spade, speed, sword, thread, word, childhood, cupboard, custard, forehead, graveyard, hillside, lizard, parade, railroad, shepherd, neighborhood, aid, cloud, hide, need, read, add, bleed, board, feed, glide, lead, load, ride, spread, record, bad, hard, odd, sad, inside, outside, upward, good, proud, red, third, wide, ahead, wicked, excited, god
     ],
   },
 };

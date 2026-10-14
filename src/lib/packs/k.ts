@@ -72,8 +72,8 @@ export const k: SoundPack = {
       { word: "click", pictogram: 9860 },
       { word: "cloak", pictogram: 36003 },
       { word: "clock", pictogram: 5561 },
-      { word: "cluck", pictogram: 6949 },
-      // Also: crook, deck, flock, hawk, hook, joke, lake, lock, luck, mark, pack, peak, pork, rake, sack, smoke, spike, spoke, stork, track, truck, yolk, beefsteak, daybreak, headache, housework, magic, picnic, sidewalk, snowflake, toothpick, break, lick, like, look, make, park, soak, speak, take, trick, walk, work, dislike, ache, bake, bark, block, crack, croak, knock, leak, pick, prick, quack, rock, seek, shake, suck, tack, attack, black, dark, sick, weak, quick, thick, awake, public
+      { word: "deck", pictogram: 21577 },
+      // Also: flock, hawk, hook, joke, lake, lock, luck, mark, pack, peak, pork, rake, sack, smoke, spike, spoke, stork, track, truck, yolk, beefsteak, daybreak, headache, housework, magic, picnic, sidewalk, snowflake, toothpick, break, lick, like, look, make, park, soak, speak, take, trick, walk, work, dislike, ache, bake, bark, block, crack, croak, knock, leak, pick, prick, quack, rock, seek, shake, suck, tack, attack, black, dark, sick, weak, quick, thick, awake, public
     ],
   },
 };
