@@ -20,7 +20,6 @@ export const thVoiced: SoundPack = {
       { word: "grandfather", pictogram: 23718 },
       { word: "grandmother", pictogram: 23710 },
       { word: "brother", pictogram: 2423 },
-      { word: "clothing", pictogram: 34739 },
       { word: "father", pictogram: 2497 },
       { word: "feather", pictogram: 5545 },
       { word: "leather", pictogram: 5979 },

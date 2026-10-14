@@ -27,7 +27,7 @@ export const s: SoundPack = {
       { word: "cell", pictogram: 36340 },
       { word: "cent", pictogram: 4775 },
       { word: "sack", pictogram: 6210 },
-      // Also: safe, saint, sand, sap, seat, seed, sight, sir, size, sole, son, soul, sound, suit, sword, ceiling, cellar, center, saddle, sadness, sailboat, sailor, savings, seesaw, servant, sickness, sidewalk, silence, singer, sitting, soda, soldier, sunrise, cereal, cigarette, settlement, sunflower, say, search, see, sell, sew, sing, sit, soak, soap, select, sail, save, saw, seek, send, sense, serve, set, sign, sink, sip, soil, sort, suck, season, settle, subject, suffer, surprise, separate, sad, same, sick, soft, several, six, sixth, so, some, second, selfish, seven, simple, single, sixteen, sixty, sometimes, sunny, seventeen, seventy, sun, sorry, sunday, saturday, september, since, south, somebody
+      // Also: safe, saint, sand, sap, seat, seed, sight, sir, size, sole, son, soul, sound, suit, sword, ceiling, cellar, center, saddle, sadness, sailboat, sailor, savings, seesaw, servant, sickness, sidewalk, silence, singer, sitting, soda, sunrise, cereal, cigarette, settlement, sunflower, say, search, see, sell, sew, sing, sit, soak, soap, select, sail, save, saw, seek, send, sense, serve, set, sign, sink, sip, soil, sort, suck, season, settle, subject, suffer, surprise, separate, sad, same, sick, soft, several, six, sixth, so, some, second, selfish, seven, simple, sixteen, sixty, sometimes, sunny, seventeen, seventy, sun, sorry, sunday, saturday, september, since, south, somebody
     ],
     medial: [
       { word: "basket", pictogram: 3012 },

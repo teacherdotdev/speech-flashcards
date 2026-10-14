@@ -37,7 +37,6 @@ export const j: SoundPack = {
       { word: "magic", pictogram: 10157 },
       { word: "manger", pictogram: 26320 },
       { word: "pigeon", pictogram: 2493 },
-      { word: "soldier", pictogram: 2797 },
       { word: "engineer", pictogram: 2968 },
       { word: "manager", pictogram: 16041 },
       { word: "passenger", pictogram: 16105 },

@@ -22,7 +22,6 @@ export const ng: SoundPack = {
       { word: "sprinkle", pictogram: 16699 },
       { word: "angry", pictogram: 35539 },
       { word: "hungry", pictogram: 4962 },
-      { word: "single", pictogram: 11633 },
     ],
     final: [
       { word: "ring", pictogram: 6900 },
@@ -39,13 +38,13 @@ export const ng: SoundPack = {
       { word: "sling", pictogram: 30472 },
       { word: "wing", pictogram: 5368 },
       { word: "ceiling", pictogram: 2583 },
-      { word: "clothing", pictogram: 34739 },
       { word: "darling", pictogram: 8020 },
       { word: "bring", pictogram: 7280 },
       { word: "sing", pictogram: 6960 },
       { word: "hang", pictogram: 6986 },
       { word: "string", pictogram: 5454 },
-      // Also: wring, long, strong, young, wrong, among, everything, during
+      { word: "wring", pictogram: 17231 },
+      // Also: long, strong, young, wrong, among, everything, during
     ],
   },
 };

@@ -63,9 +63,9 @@ export const sh: SoundPack = {
       { word: "finish", pictogram: 32814 },
       { word: "crush", pictogram: 17273 },
       { word: "hush", pictogram: 5936 },
-      { word: "splash", pictogram: 26423 },
       { word: "squash", pictogram: 11180 },
-      // Also: polish, foolish, selfish
+      { word: "polish", pictogram: 8727 },
+      // Also: foolish, selfish
     ],
   },
 };

@@ -15,7 +15,6 @@ export const g: SoundPack = {
       { word: "game", pictogram: 6170 },
       { word: "gas", pictogram: 25129 },
       { word: "gate", pictogram: 37619 },
-      { word: "gay", pictogram: 11554 },
       { word: "goal", pictogram: 2535 },
       { word: "golf", pictogram: 10160 },
       { word: "goose", pictogram: 2878 },
@@ -26,8 +25,9 @@ export const g: SoundPack = {
       { word: "goodness", pictogram: 37231 },
       { word: "gasoline", pictogram: 8125 },
       { word: "government", pictogram: 21906 },
-      { word: "gunpowder", pictogram: 37078 },
-      // Also: get, give, go, gain, guess, gallop, good, golden, goodbye, god
+      { word: "get", pictogram: 24208 },
+      { word: "give", pictogram: 28431 },
+      // Also: go, gain, guess, gallop, good, golden, goodbye, god
     ],
     medial: [
       { word: "finger", pictogram: 3298 },
@@ -48,9 +48,9 @@ export const g: SoundPack = {
       { word: "forget", pictogram: 26258 },
       { word: "forgive", pictogram: 11625 },
       { word: "agree", pictogram: 37861 },
-      { word: "ugly", pictogram: 26090 },
       { word: "together", pictogram: 5367 },
-      // Also: again, foggy, single, august, against
+      { word: "again", pictogram: 37163 },
+      // Also: foggy, august, against
     ],
     final: [
       { word: "dog", pictogram: 7202 },

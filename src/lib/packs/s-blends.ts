@@ -27,13 +27,12 @@ export const sBlends: SoundPack = {
       { word: "squirrel", pictogram: 25815 }, // skw
       { word: "station", pictogram: 29905 }, // st
       { word: "sweater", pictogram: 2436 }, // sw
-      // Also: strawberry, scales, scrap, screen, screw, skate, sky, sleeve, slice, slide, sling, smoke, sneeze, space, spade, spear, speech, speed, spike, spoke, stage, stair, stall, stamp, star, start, states, steak, stem, step, stole, stone, stool, stork, stove, strap, straw, stream, strip, stuff, swamp, swan, schoolhouse, skater, slipper, snowflake, sparrow, speaker, spinach, stable, stocking, story, swallow, sweetheart, swimming, ski, sleep, smell, smile, snow, speak, stand, stitch, stop, swim, study, scare, score, scrape, scratch, scream, scrub, skip, slip, snap, spill, spit, splash, spot, spread, squash, squeeze, state, steal, steam, stir, stretch, string, swear, sweat, sweep, sprinkle, slow, small, smooth, strange, strong, sweet, stiff, straight, swift, snowy, sticky, stormy
+      // Also: strawberry, scales, scrap, screen, screw, skate, sky, sleeve, slice, slide, sling, smoke, sneeze, space, spade, spear, speech, speed, spike, spoke, stage, stair, stall, stamp, star, start, states, steak, stem, step, stole, stone, stool, stork, stove, strap, straw, stream, strip, stuff, swamp, swan, schoolhouse, skater, slipper, snowflake, sparrow, speaker, spinach, stable, stocking, story, swallow, sweetheart, swimming, ski, sleep, smell, smile, snow, speak, stand, stitch, stop, swim, study, scare, score, scrape, scratch, scream, scrub, skip, slip, snap, spill, spit, spot, spread, squash, squeeze, state, steal, steam, stir, stretch, string, swear, sweat, sweep, sprinkle, slow, small, smooth, strange, strong, sweet, stiff, straight, swift, snowy, sticky, stormy
     ],
     final: [
       { word: "post", pictogram: 32540 }, // st
       { word: "breakfast", pictogram: 4626 }, // st
       { word: "forest", pictogram: 2666 }, // st
-      { word: "blast", pictogram: 30954 }, // st
       { word: "burst", pictogram: 30956 }, // st
       { word: "chest", pictogram: 5966 }, // st
       { word: "coast", pictogram: 2826 }, // st
@@ -50,7 +49,8 @@ export const sBlends: SoundPack = {
       { word: "artist", pictogram: 34767 }, // st
       { word: "dentist", pictogram: 2733 }, // st
       { word: "harvest", pictogram: 7227 }, // st
-      // Also: ask, paste, rest, task, toast, dust, fast, test, trust, first, best, lost, past, august, east, west
+      { word: "ask", pictogram: 9847 }, // sk
+      // Also: paste, rest, task, toast, dust, fast, test, trust, first, best, lost, past, august, east, west
     ],
   },
 };

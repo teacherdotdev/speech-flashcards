@@ -7,7 +7,6 @@ export const lBlends: SoundPack = {
   name: "L-blends",
   cards: {
     initial: [
-      { word: "blood", pictogram: 2803 }, // bl
       { word: "clothes", pictogram: 7233 }, // kl
       { word: "flame", pictogram: 4654 }, // fl
       { word: "glass", pictogram: 2610 }, // gl
@@ -23,11 +22,12 @@ export const lBlends: SoundPack = {
       { word: "flower", pictogram: 7104 }, // fl
       { word: "glasses", pictogram: 3329 }, // gl
       { word: "playground", pictogram: 2859 }, // pl
-      { word: "blast", pictogram: 30954 }, // bl
       { word: "blind", pictogram: 4600 }, // bl
       { word: "claw", pictogram: 5477 }, // kl
       { word: "clay", pictogram: 5908 }, // kl
-      // Also: clerk, click, cliff, cloak, clock, cloth, clown, club, cluck, flag, flat, flea, flock, flood, floor, glance, glove, plain, plane, plug, plum, sleeve, slice, slide, sling, blacksmith, blessing, classmate, cleaner, closet, clothing, clover, flashlight, flip-flop, platform, platter, player, playhouse, slipper, blueberry, blow, cloud, flash, fly, play, sleep, blame, bleed, bless, block, clap, climb, flap, float, glide, plan, plow, slip, flutter, black, blue, clean, clear, close, slow, cloudy, pleasant, please
+      { word: "clerk", pictogram: 31756 }, // kl
+      { word: "click", pictogram: 9860 }, // kl
+      // Also: cliff, cloak, clock, cloth, clown, club, flag, flat, flea, flock, flood, floor, glance, glove, plain, plane, plug, plum, sleeve, slice, slide, sling, blacksmith, blessing, classmate, cleaner, closet, clover, flashlight, flip-flop, platform, platter, player, playhouse, slipper, blueberry, blow, cloud, flash, fly, play, sleep, blame, bleed, bless, block, clap, climb, flap, float, glide, plan, plow, slip, flutter, black, blue, clean, clear, close, slow, cloudy, pleasant, please
     ],
   },
 };
