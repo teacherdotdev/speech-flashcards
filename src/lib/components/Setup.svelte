@@ -180,6 +180,7 @@
         <img src="/teacher-dev-logo.svg" alt="" width="20" height="20" />
         Built by teacher.dev
       </a>
+      <a href={resolve("/packs")} class="hover:underline">Flashcard packs</a>
       <a href={resolve("/about")} class="hover:underline">About</a>
       <a href={resolve("/privacy")} class="hover:underline">Privacy</a>
     </p>
