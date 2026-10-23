@@ -35,7 +35,7 @@ export const thVoiceless: SoundPack = {
       { word: "tooth", pictogram: 10267 },
       { word: "blacksmith", pictogram: 8603 },
       { word: "tablecloth", pictogram: 2460 },
-      { word: "bath", pictogram: 25843 },
+      { word: "bath", pictogram: 32142 },
     ],
   },
 };

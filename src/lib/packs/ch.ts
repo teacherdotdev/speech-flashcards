@@ -20,14 +20,14 @@ export const ch: SoundPack = {
       { word: "chick", pictogram: 34076 },
       { word: "chin", pictogram: 2991 },
       { word: "chip", pictogram: 3369 },
-      { word: "chop", pictogram: 6976 },
       { word: "checkers", pictogram: 3192 },
       { word: "cherry", pictogram: 8303 },
       { word: "children", pictogram: 7178 },
       { word: "chimney", pictogram: 2333 },
       { word: "champion", pictogram: 11271 },
       { word: "charm", pictogram: 8132 },
-      // Also: chase, cheer, chew, cheap
+      { word: "chase", pictogram: 7037 },
+      // Also: cheer, chew, cheap
     ],
     medial: [
       { word: "kitchen", pictogram: 10752 },

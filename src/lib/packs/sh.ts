@@ -20,11 +20,10 @@ export const sh: SoundPack = {
       { word: "shoulder", pictogram: 2977 },
       { word: "shower", pictogram: 2370 },
       { word: "shake", pictogram: 5365 },
-      { word: "shave", pictogram: 32691 },
+      { word: "shave", pictogram: 5361 },
       { word: "ship", pictogram: 10189 },
       { word: "shoot", pictogram: 5961 },
       { word: "short", pictogram: 26002 },
-      { word: "sharp", pictogram: 5362 },
       { word: "shy", pictogram: 8707 },
     ],
     medial: [

@@ -27,7 +27,7 @@ export const k: SoundPack = {
       { word: "kitchen", pictogram: 10752 },
       { word: "calendar", pictogram: 32488 },
       { word: "cage", pictogram: 5494 },
-      // Also: calf, can, cape, card, care, cart, cave, coach, coal, coast, cone, cord, cork, corn, cot, court, key, king, kite, cabbage, cabin, canal, candle, cannon, canoe, captain, carpet, carriage, carrot, cashier, castle, cattle, chorus, cobbler, codfish, collar, color, column, cookie, copper, corner, cottage, cotton, counter, country, cousin, cowboy, cupboard, curtain, cushion, custard, kettle, kindness, kitten, cabinet, campfire, canary, candlestick, capital, carpenter, coconut, conductor, caterpillar, call, comb, cook, count, cut, kiss, carry, cool, cough, curl, keep, kick, cackle, connect, copy, correct, cold, cooked, kind, curly
+      // Also: calf, can, cape, card, care, cart, cave, coach, coal, coast, cone, cord, cork, corn, cot, court, key, king, kite, cabbage, cabin, canal, candle, cannon, canoe, captain, carpet, carriage, carrot, cashier, castle, cattle, chorus, cobbler, codfish, collar, color, column, cookie, copper, corner, cottage, cotton, counter, country, cousin, cowboy, cupboard, curtain, cushion, kettle, kindness, kitten, cabinet, campfire, canary, candlestick, capital, carpenter, coconut, conductor, caterpillar, call, comb, cook, count, cut, kiss, carry, cool, cough, curl, keep, kick, cackle, connect, copy, correct, cold, cooked, kind, curly
     ],
     medial: [
       { word: "basket", pictogram: 3012 },
@@ -53,7 +53,6 @@ export const k: SoundPack = {
       // Also: bicycle, overcoat, firecracker, account, acorn, bacon, baker, banker, biscuit, blacksmith, boxer, bucket, checkers, cracker, doctor, income, package, picture, pumpkin, shaker, sickness, speaker, stocking, turkey, uncle, worker, dressmaker, factory, pussycat, tricycle, electricity, accept, escape, explain, record, sprinkle, tickle, broken, equal, backwards, lucky, quickly, second, sixteen, sixty, sticky, wicked, excited
     ],
     final: [
-      { word: "back", pictogram: 2748 },
       { word: "book", pictogram: 25191 },
       { word: "duck", pictogram: 28479 },
       { word: "fork", pictogram: 2588 },
@@ -73,7 +72,8 @@ export const k: SoundPack = {
       { word: "hook", pictogram: 2744 },
       { word: "joke", pictogram: 21537 },
       { word: "lake", pictogram: 6022 },
-      // Also: lock, mark, pack, peak, pork, rake, smoke, spike, spoke, stork, track, truck, yolk, beefsteak, daybreak, headache, housework, magic, picnic, sidewalk, snowflake, toothpick, break, lick, like, look, make, park, soak, speak, take, trick, walk, work, dislike, ache, bake, bark, block, crack, croak, knock, leak, pick, prick, quack, rock, seek, shake, suck, tack, black, dark, sick, weak, quick, awake, public
+      { word: "lock", pictogram: 3261 },
+      // Also: mark, pack, peak, pork, rake, smoke, spike, spoke, steak, stork, track, truck, yolk, daybreak, headache, housework, magic, picnic, sidewalk, snowflake, toothpick, break, lick, like, look, make, park, soak, speak, take, trick, walk, work, dislike, ache, bake, bark, block, crack, croak, knock, leak, pick, prick, quack, rock, seek, shake, suck, tack, black, dark, sick, weak, quick, awake, public
     ],
   },
 };

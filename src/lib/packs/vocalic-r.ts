@@ -14,11 +14,9 @@ export const vocalicR: SoundPack = {
       { word: "earth", pictogram: 3160 }, // er
       { word: "oar", pictogram: 6206 }, // or
       { word: "airplane", pictogram: 6924 }, // air
-      { word: "army", pictogram: 11246 }, // ar
       { word: "artist", pictogram: 34767 }, // ar
       { word: "iron", pictogram: 2528 }, // ire
       { word: "organ", pictogram: 24214 }, // or
-      { word: "order", pictogram: 25062 }, // or
       { word: "air", pictogram: 9044 }, // air
     ],
     medial: [
@@ -42,7 +40,7 @@ export const vocalicR: SoundPack = {
       { word: "circus", pictogram: 6450 }, // er
       { word: "garden", pictogram: 2974 }, // ar
       { word: "market", pictogram: 32942 }, // ar
-      // Also: morning, perfume, person, popcorn, squirrel, afternoon, butterfly, overcoat, waterproof, barn, beard, card, cart, cord, cork, corn, court, dart, dwarf, form, fort, harp, herd, horn, mark, pearl, porch, pork, purse, start, stork, sword, word, world, acorn, alarm, carpet, checkers, cupboard, curtain, custard, desert, farming, fireworks, forehead, hairpin, harvest, horseshoe, housework, lizard, marble, party, platform, sweetheart, turkey, turtle, apartment, firearm, fireplace, fisherman, neighborhood, watermelon, learn, park, work, bark, board, burn, charm, curl, hurt, sort, turn, warm, warn, report, worry, dark, hard, short, nearby, tired, upward, yesterday, hers, sharp, worn, backwards, barefoot, curly, dirty, forty, fourteen, purple, stormy, thirsty, thirteen, thirty, important
+      // Also: morning, perfume, person, popcorn, squirrel, afternoon, butterfly, overcoat, waterproof, barn, beard, card, cart, cord, cork, corn, court, dart, dwarf, form, fort, harp, herd, horn, mark, pearl, porch, pork, purse, start, stork, sword, word, world, acorn, alarm, carpet, checkers, cupboard, curtain, desert, farming, fireworks, forehead, hairpin, harvest, horseshoe, housework, lizard, marble, party, platform, sweetheart, turkey, turtle, apartment, firearm, fireplace, fisherman, neighborhood, watermelon, learn, park, work, bark, board, burn, charm, curl, hurt, sort, turn, warm, warn, report, worry, dark, hard, short, nearby, tired, upward, hers, worn, backwards, barefoot, curly, dirty, forty, fourteen, purple, stormy, thirsty, thirteen, thirty, important
     ],
     final: [
       { word: "bar", pictogram: 32398 }, // ar

@@ -385,11 +385,16 @@ ${sections.join("\n")}
 `;
 }
 
-/** Dale-Chall words that aren't right for children's practice cards. */
+/**
+ * Dale-Chall words that aren't right for children's practice cards, or whose
+ * ARASAAC picture isn't: weapons and soldiers ("army", "bang"), meat ("chop")
+ * and religious scenes ("blessing").
+ */
 const LEFT_OUT = new Set(
-  "beer birth blast blood breast bullet cigar cigarette clothing cluck crazy crook dam damn death devil drove drunk gay grave graveyard gun gunpowder hell kill lice pistol prison pussy rifle single soldier splash tobacco ugly whisky wine".split(
-    " ",
-  ),
+  `army bang beefsteak beer birth blast blessing blood breast bullet chop cigar
+  cigarette clothing cluck crazy crook dam damn death devil drove drunk gay
+  grave graveyard gun gunpowder hell kill knife lice pistol prison pussy rifle
+  sharp single soldier splash tank tobacco ugly whisky wine`.split(/\s+/),
 );
 
 /**
@@ -401,26 +406,26 @@ const LEFT_OUT = new Set(
  */
 const HARD_TO_PICTURE = new Set(
   `above address after afterwards again against age agree alive always anger
-  arrive as ask attack attend attention august author avenue awful because
+  arrive as ask attack attend attention august author avenue awful back because
   before beggar beneath best bill blind both bother brake brightness burst
   catch cause cell cent change charge chart cheat check childhood chill chilly
-  choice choose clerk click comfort company cost course cover crush danger
-  darkness darling dash deaf defeat defend den desire dew different direction
-  discover divide dust english enjoy even ever everything evil exchange faint
-  faith fast favorite fear figure file finish first flour foolish forget
-  forgive fortune fourth freedom gain gentleman get good goodness government
-  grove guess guide gulf handkerchief hang have heaven his host hunger hush if
-  improve instant invite january job join journey joy july june lane language
-  large law leave length level life lift list live lose lost luck manager
-  manger mischief much neither never nothing offer office often pansy past
-  paste pavement peace piece place pleasant please polish price protect raise
-  reach reason receive refuse rejoice remove return review rich rise rough
-  rubbish sack safe saint sap save savings schoolroom search season selfish
-  servant serve several shape share shear shears shepherd shoemaker shout show
-  shut sight sir size sole stiff stuff subject such suffer supper tale task tax
-  thanks thick think third thursday together touch trade trust truth tuesday
-  understand unfold unpleasant value very victory visit waste watchman weave
-  week wring wrong youth`.split(/\s+/),
+  choice choose clerk click comfort company cost course cover crush custard
+  danger darkness darling dash deaf defeat defend den desire dew different
+  direction discover divide dust english enjoy even ever everything evil
+  exchange faint faith fast favorite fear figure file finish first flour
+  foolish forget forgive fortune fourth freedom gain gentleman get good
+  goodness government grove guess guide gulf handkerchief hang have heaven his
+  host hunger hush if improve instant invite january job join journey joy july
+  june lane language large law leave length level life lift list live lose lost
+  luck manager manger mischief much neither never nothing offer office often
+  order pansy past paste pavement peace piece place pleasant please polish
+  price protect raise reach reason receive refuse rejoice remove return review
+  rich rise rough rubbish sack safe saint sap save savings schoolroom search
+  season selfish servant serve several shape share shear shears shepherd
+  shoemaker shout show shut sight sir size sole stiff stuff subject such suffer
+  supper tale task tax thanks thick think third thursday together touch trade
+  trust truth tuesday understand unfold unpleasant value very victory visit
+  waste watchman weave week wring wrong yesterday youth`.split(/\s+/),
 );
 
 /**
@@ -435,6 +440,16 @@ const NOT_IN: Record<string, string[]> = { z: ["these", "those"] };
  */
 const PICTURE_FOR: Record<string, number> = {
   chest: 5966,
+  // A bathtub with rubber ducks, not a woman swimming.
+  bath: 32142,
+  // A hospital building with an ambulance, not a Star of David.
+  hospital: 3116,
+  // A sheep with her lamb, not lamb meat.
+  lamb: 34078,
+  // A man shaving his face, not an armpit.
+  shave: 5361,
+  // A roll of sticky tape, not a headband.
+  tape: 34047,
   // A gift, not a clock for "the present".
   present: 25381,
 };
