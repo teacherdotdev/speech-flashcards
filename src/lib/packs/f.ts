@@ -39,7 +39,6 @@ export const f: SoundPack = {
       { word: "elephant", pictogram: 2372 },
       { word: "grandfather", pictogram: 23718 },
       { word: "telephone", pictogram: 26479 },
-      { word: "beefsteak", pictogram: 35759 },
       { word: "codfish", pictogram: 25835 },
       { word: "platform", pictogram: 22200 },
       { word: "snowflake", pictogram: 38027 },
@@ -50,7 +49,6 @@ export const f: SoundPack = {
       { word: "barefoot", pictogram: 7014 },
     ],
     final: [
-      { word: "knife", pictogram: 4931 },
       { word: "leaf", pictogram: 5077 },
       { word: "scarf", pictogram: 2290 },
       { word: "waterproof", pictogram: 8122 },

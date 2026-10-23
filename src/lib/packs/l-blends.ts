@@ -27,7 +27,7 @@ export const lBlends: SoundPack = {
       { word: "clock", pictogram: 5561 }, // kl
       { word: "cloth", pictogram: 34862 }, // kl
       { word: "clown", pictogram: 2854 }, // kl
-      // Also: club, flag, flat, flea, flock, flood, floor, glance, glove, plain, plane, plug, plum, sleeve, slice, slide, sling, blacksmith, blessing, classmate, cleaner, closet, clover, flashlight, flip-flop, platform, platter, player, playhouse, slipper, blueberry, blow, cloud, flash, fly, play, sleep, blame, bleed, bless, block, clap, climb, flap, float, glide, plan, plow, slip, flutter, black, blue, clean, clear, close, slow, cloudy
+      // Also: club, flag, flat, flea, flock, flood, floor, glance, glove, plain, plane, plug, plum, sleeve, slice, slide, sling, blacksmith, classmate, cleaner, closet, clover, flashlight, flip-flop, platform, platter, player, playhouse, slipper, blueberry, blow, cloud, flash, fly, play, sleep, blame, bleed, bless, block, clap, climb, flap, float, glide, plan, plow, slip, flutter, black, blue, clean, clear, close, slow, cloudy
     ],
   },
 };

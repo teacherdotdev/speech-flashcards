@@ -51,7 +51,7 @@ export const v: SoundPack = {
       { word: "love", pictogram: 11536 },
       { word: "dive", pictogram: 25166 },
       { word: "move", pictogram: 24819 },
-      { word: "shave", pictogram: 32691 },
+      { word: "shave", pictogram: 5361 },
       { word: "brave", pictogram: 36163 },
     ],
   },

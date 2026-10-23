@@ -20,7 +20,7 @@ export const l: SoundPack = {
       { word: "library", pictogram: 6063 },
       { word: "lace", pictogram: 15363 },
       { word: "lake", pictogram: 6022 },
-      { word: "lamb", pictogram: 25626 },
+      { word: "lamb", pictogram: 34078 },
       { word: "lawn", pictogram: 11214 },
       { word: "lid", pictogram: 27395 },
       { word: "lime", pictogram: 15453 },

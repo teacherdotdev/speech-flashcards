@@ -50,7 +50,7 @@ export const d: SoundPack = {
       { word: "handle", pictogram: 5060 },
       { word: "headache", pictogram: 28651 },
       { word: "lady", pictogram: 4745 },
-      // Also: leader, needle, puddle, radish, reading, reindeer, riddle, riding, saddle, sadness, shadow, shoulder, sidewalk, soda, adventure, candlestick, conductor, granddaughter, indian, underwear, order, study, thunder, admire, today, yesterday, cloudy, golden, middle, ready, windy
+      // Also: leader, needle, puddle, radish, reading, reindeer, riddle, riding, saddle, sadness, shadow, shoulder, sidewalk, soda, adventure, candlestick, conductor, granddaughter, indian, underwear, study, thunder, admire, today, cloudy, golden, middle, ready, windy
     ],
     final: [
       { word: "bed", pictogram: 25900 },
@@ -73,7 +73,7 @@ export const d: SoundPack = {
       { word: "crowd", pictogram: 38445 },
       { word: "flood", pictogram: 4669 },
       { word: "head", pictogram: 2673 },
-      // Also: herd, hood, lid, maid, mud, pad, road, slide, spade, speed, sword, thread, word, cupboard, custard, forehead, hillside, lizard, parade, railroad, neighborhood, aid, cloud, hide, need, read, add, bleed, board, feed, glide, lead, load, ride, spread, record, bad, hard, odd, sad, inside, outside, upward, proud, red, wide, ahead, wicked, excited
+      // Also: herd, hood, lid, maid, mud, pad, road, slide, spade, speed, sword, thread, word, cupboard, forehead, hillside, lizard, parade, railroad, neighborhood, aid, cloud, hide, need, read, add, bleed, board, feed, glide, lead, load, ride, spread, record, bad, hard, odd, sad, inside, outside, upward, proud, red, wide, ahead, wicked, excited
     ],
   },
 };

@@ -99,4 +99,5 @@ export const LOOKS: Record<number, Look> = {
   8707: { skin: "tan" }, // shy
   11356: { skin: "medium" }, // scratch
   8574: { skin: "deep" }, // stretch
+  5361: { skin: "dark", hair: "black" }, // shave
 };

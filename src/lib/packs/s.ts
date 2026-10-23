@@ -38,19 +38,19 @@ export const s: SoundPack = {
       { word: "person", pictogram: 34560 },
       { word: "accident", pictogram: 4551 },
       { word: "bicycle", pictogram: 6935 },
-      { word: "hospital", pictogram: 36210 },
+      { word: "hospital", pictogram: 3116 },
       { word: "medicine", pictogram: 8163 },
       { word: "policeman", pictogram: 37367 },
       { word: "baseball", pictogram: 8660 },
       { word: "basement", pictogram: 8223 },
       { word: "biscuit", pictogram: 8312 },
-      { word: "blessing", pictogram: 23828 },
       { word: "boxer", pictogram: 9188 },
       { word: "bracelet", pictogram: 26700 },
       { word: "castle", pictogram: 5422 },
       { word: "classmate", pictogram: 39421 },
-      { word: "custard", pictogram: 6644 },
-      // Also: dancer, grandson, hillside, housework, insect, postman, rooster, teaspoon, whistle, dressmaker, eraser, gasoline, grasshopper, passenger, pussycat, tricycle, electricity, answer, decide, dislike, listen, accept, christen, destroy, escape, fasten, insult, whisper, inside, outside, yesterday, absent, misty, thirsty, excited
+      { word: "dancer", pictogram: 11186 },
+      { word: "grandson", pictogram: 10343 },
+      // Also: hillside, housework, insect, postman, rooster, teaspoon, whistle, dressmaker, eraser, gasoline, grasshopper, passenger, pussycat, tricycle, electricity, answer, decide, dislike, listen, accept, christen, destroy, escape, fasten, insult, whisper, inside, outside, absent, misty, thirsty, excited
     ],
     final: [
       { word: "bus", pictogram: 2262 },

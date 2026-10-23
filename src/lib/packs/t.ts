@@ -22,12 +22,12 @@ export const t: SoundPack = {
       { word: "tomato", pictogram: 2594 },
       { word: "tag", pictogram: 9920 },
       { word: "tail", pictogram: 5967 },
-      { word: "tank", pictogram: 3400 },
       { word: "tap", pictogram: 2414 },
-      { word: "tape", pictogram: 15357 },
+      { word: "tape", pictogram: 34047 },
       { word: "tea", pictogram: 29802 },
       { word: "team", pictogram: 15264 },
-      // Also: tear, tent, tin, tip, tool, tooth, top, tow, tub, tug, tailor, teacher, teaspoon, tennis, tire, toothbrush, toothpick, tower, tulip, tunnel, turkey, turtle, tablecloth, take, talk, tell, toast, toss, tack, tame, tan, teach, test, till, turn, tickle, tiptoe, tall, too, tiny, tired, today, tomorrow, ten, two, terrible
+      { word: "tear", pictogram: 14252 },
+      // Also: tent, tin, tip, tool, tooth, top, tow, tub, tug, tailor, teacher, teaspoon, tennis, tire, toothbrush, toothpick, tower, tulip, tunnel, turkey, turtle, tablecloth, take, talk, tell, toast, toss, tack, tame, tan, teach, test, till, turn, tickle, tiptoe, tall, too, tiny, tired, today, tomorrow, ten, two, terrible
     ],
     medial: [
       { word: "daytime", pictogram: 26799 },
@@ -39,9 +39,7 @@ export const t: SoundPack = {
       { word: "potato", pictogram: 2503 },
       { word: "vegetable", pictogram: 29131 },
       { word: "bathtub", pictogram: 2272 },
-      { word: "beefsteak", pictogram: 35759 },
       { word: "captain", pictogram: 24937 },
-      { word: "custard", pictogram: 6644 },
       { word: "doctor", pictogram: 2467 },
       { word: "grandstand", pictogram: 24787 },
       { word: "rooster", pictogram: 2404 },
@@ -50,7 +48,9 @@ export const t: SoundPack = {
       { word: "factory", pictogram: 35393 },
       { word: "multiply", pictogram: 5798 },
       { word: "empty", pictogram: 26527 },
-      // Also: yesterday, eighteen, fifteen, fifty, fourteen, misty, nineteen, sixteen, sixty, sometimes, thirsty, thirteen, seventeen
+      { word: "eighteen", pictogram: 29274 },
+      { word: "fifteen", pictogram: 29268 },
+      // Also: fifty, fourteen, misty, nineteen, sixteen, sixty, sometimes, thirsty, thirteen, seventeen
     ],
     final: [
       { word: "boat", pictogram: 6932 },

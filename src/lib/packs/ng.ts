@@ -27,7 +27,6 @@ export const ng: SoundPack = {
       { word: "lightning", pictogram: 34545 },
       { word: "morning", pictogram: 25704 },
       { word: "wedding", pictogram: 37362 },
-      { word: "bang", pictogram: 25944 },
       { word: "king", pictogram: 5563 },
       { word: "sling", pictogram: 30472 },
       { word: "wing", pictogram: 5368 },
