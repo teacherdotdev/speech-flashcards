@@ -391,10 +391,10 @@ ${sections.join("\n")}
  * and religious scenes ("blessing").
  */
 const LEFT_OUT = new Set(
-  `army bang beefsteak beer birth blast blessing blood breast bullet chop cigar
-  cigarette clothing cluck crazy crook dam damn death devil drove drunk gay
-  grave graveyard gun gunpowder hell kill knife lice pistol prison pussy rifle
-  sharp single soldier splash tank tobacco ugly whisky wine`.split(/\s+/),
+  `army bang bar beefsteak beer birth blast blessing blood breast bullet chop
+  cigar cigarette clothing cluck crazy crook dam damn death devil drove drunk
+  gay grave graveyard gun gunpowder hell kill knife lice pistol prison pussy
+  rifle sharp single soldier splash tank tobacco ugly whisky wine`.split(/\s+/),
 );
 
 /**
