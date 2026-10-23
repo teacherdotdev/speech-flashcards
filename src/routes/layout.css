@@ -5,9 +5,8 @@
   --color-accent-dark: #115e59;
   --color-accent-soft: #ccfbf1;
 
-  --font-card:
-    "Arial Rounded MT Bold", "Helvetica Neue", Helvetica, Arial, system-ui,
-    sans-serif;
+  /* ABeeZee: made for children's reading, with a single-story "a". */
+  --font-card: "ABeeZee", system-ui, sans-serif;
 }
 
 @layer base {
