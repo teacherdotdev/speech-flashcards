@@ -9,7 +9,6 @@ export const d: SoundPack = {
     initial: [
       { word: "dad", pictogram: 31146 },
       { word: "dance", pictogram: 35747 },
-      { word: "dash", pictogram: 3200 },
       { word: "day", pictogram: 37731 },
       { word: "dog", pictogram: 7202 },
       { word: "doll", pictogram: 26238 },
@@ -19,15 +18,16 @@ export const d: SoundPack = {
       { word: "daytime", pictogram: 26799 },
       { word: "dinner", pictogram: 4592 },
       { word: "donkey", pictogram: 2291 },
-      { word: "dam", pictogram: 6191 },
       { word: "dart", pictogram: 8309 },
       { word: "deck", pictogram: 21577 },
       { word: "deer", pictogram: 3263 },
-      { word: "den", pictogram: 7149 },
-      { word: "dew", pictogram: 39419 },
       { word: "ditch", pictogram: 37129 },
       { word: "dough", pictogram: 32476 },
-      // Also: dump, dancer, danger, darkness, darling, daughter, daybreak, dentist, desert, diamond, diver, doctor, dollar, dolly, direction, die, do, decide, dislike, dawn, dig, dine, dip, dive, dust, defeat, defend, destroy, direct, dismiss, divide, double, desire, discover, dark, different, dead, deaf, dull, dumb, dirty, december, date
+      { word: "dump", pictogram: 15726 },
+      { word: "dancer", pictogram: 11186 },
+      { word: "daughter", pictogram: 9885 },
+      { word: "daybreak", pictogram: 11477 },
+      // Also: dentist, desert, diamond, diver, doctor, dollar, dolly, die, do, decide, dislike, dawn, dig, dine, dip, dive, destroy, direct, dismiss, double, dark, dead, dull, dumb, dirty
     ],
     medial: [
       { word: "bedroom", pictogram: 5988 },
@@ -43,14 +43,14 @@ export const d: SoundPack = {
       { word: "calendar", pictogram: 32488 },
       { word: "medicine", pictogram: 8163 },
       { word: "radio", pictogram: 26358 },
-      { word: "address", pictogram: 30231 },
       { word: "bandage", pictogram: 6243 },
       { word: "building", pictogram: 5989 },
       { word: "candle", pictogram: 6242 },
       { word: "codfish", pictogram: 25835 },
-      { word: "freedom", pictogram: 11488 },
-      { word: "goodness", pictogram: 37231 },
-      // Also: handle, headache, lady, leader, needle, puddle, radish, reading, reindeer, riddle, riding, saddle, sadness, shadow, shoulder, sidewalk, soda, adventure, candlestick, conductor, granddaughter, indian, underwear, order, study, thunder, admire, understand, today, yesterday, cloudy, golden, middle, ready, windy, goodbye, monday, sunday, thursday, tuesday, under, wednesday, nobody, saturday, somebody, anybody, everybody
+      { word: "handle", pictogram: 5060 },
+      { word: "headache", pictogram: 28651 },
+      { word: "lady", pictogram: 4745 },
+      // Also: leader, needle, puddle, radish, reading, reindeer, riddle, riding, saddle, sadness, shadow, shoulder, sidewalk, soda, adventure, candlestick, conductor, granddaughter, indian, underwear, order, study, thunder, admire, today, yesterday, cloudy, golden, middle, ready, windy
     ],
     final: [
       { word: "bed", pictogram: 25900 },
@@ -59,7 +59,6 @@ export const d: SoundPack = {
       { word: "food", pictogram: 4610 },
       { word: "kid", pictogram: 27509 },
       { word: "sled", pictogram: 8710 },
-      { word: "trade", pictogram: 6652 },
       { word: "wood", pictogram: 6143 },
       { word: "blackboard", pictogram: 2526 },
       { word: "cardboard", pictogram: 7054 },
@@ -73,7 +72,8 @@ export const d: SoundPack = {
       { word: "cord", pictogram: 15363 },
       { word: "crowd", pictogram: 38445 },
       { word: "flood", pictogram: 4669 },
-      // Also: guide, head, herd, hood, lid, maid, mud, pad, road, slide, spade, speed, sword, thread, word, childhood, cupboard, custard, forehead, graveyard, hillside, lizard, parade, railroad, shepherd, neighborhood, aid, cloud, hide, need, read, add, bleed, board, feed, glide, lead, load, ride, spread, record, bad, hard, odd, sad, inside, outside, upward, good, proud, red, third, wide, ahead, wicked, excited, god
+      { word: "head", pictogram: 2673 },
+      // Also: herd, hood, lid, maid, mud, pad, road, slide, spade, speed, sword, thread, word, cupboard, custard, forehead, hillside, lizard, parade, railroad, neighborhood, aid, cloud, hide, need, read, add, bleed, board, feed, glide, lead, load, ride, spread, record, bad, hard, odd, sad, inside, outside, upward, proud, red, wide, ahead, wicked, excited
     ],
   },
 };

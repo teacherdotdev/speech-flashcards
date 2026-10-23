@@ -13,8 +13,6 @@ export const thVoiced: SoundPack = {
       { word: "these", pictogram: 7096 },
       { word: "this", pictogram: 7095 },
       { word: "those", pictogram: 6907 },
-      { word: "the", pictogram: 8477 },
-      { word: "them", pictogram: 7032 },
     ],
     medial: [
       { word: "grandfather", pictogram: 23718 },
@@ -25,10 +23,7 @@ export const thVoiced: SoundPack = {
       { word: "leather", pictogram: 5979 },
       { word: "mother", pictogram: 31148 },
       { word: "weather", pictogram: 24721 },
-      { word: "bother", pictogram: 7157 },
-      { word: "together", pictogram: 5367 },
       { word: "another", pictogram: 17056 },
-      { word: "neither", pictogram: 11313 },
     ],
     final: [
       { word: "bathe", pictogram: 6058 },

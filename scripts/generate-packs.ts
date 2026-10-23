@@ -1,8 +1,8 @@
 // Builds a sound pack for each of the ~20 sounds teachers most often practice,
-// from the Dale-Chall words (see pronunciations.ts). A word goes in a pack when
-// its pronunciation has the sound in the right place AND ARASAAC has a picture
-// whose keyword is exactly that word (which also leaves out plurals and past
-// tenses, since ARASAAC keywords are base forms).
+// from the Dale-Chall words (see pronunciations.ts) and EXTRA_WORDS. A word goes
+// in a pack when its pronunciation has the sound in the right place AND ARASAAC
+// has a picture whose keyword is exactly that word (which also leaves out
+// plurals and past tenses, since ARASAAC keywords are base forms).
 //
 // Run: bun run generate-packs, then bun run pictograms
 // Writes src/lib/packs/<pack>.ts, except packs made by hand (r.ts, or any file
@@ -35,6 +35,22 @@ interface SoundDefinition {
 const isVowel = (phoneme?: string) =>
   phoneme !== undefined && /\d$/.test(phoneme);
 const unstressed = (phoneme = "") => phoneme.replace(/\d$/, "");
+const isStressed = (phoneme?: string) =>
+  phoneme !== undefined && /[12]$/.test(phoneme);
+
+/**
+ * Whether the T at `i` in the middle of a word sounds like a T. Americans say
+ * the T in "water", "city" and "party" as a quick D-like tap, swallow it before
+ * N ("button", "lightning") and often drop it after N ("winter"). It stays a T
+ * before a stressed vowel ("hotel", "potato"), after another consonant
+ * ("sister", "doctor") and before R ("mattress").
+ */
+function clearT(p: Pronunciation, i: number): boolean {
+  const [before, after] = [p[i - 1], p[i + 1]];
+  if (!isVowel(after)) return after === "R";
+  if (isStressed(after)) return true;
+  return !isVowel(before) && before !== "N" && before !== "R";
+}
 
 /**
  * A single consonant. Initial: the first sound, followed by a vowel ("sun", not
@@ -43,6 +59,10 @@ const unstressed = (phoneme = "") => phoneme.replace(/\d$/, "");
  * in the word and a vowel right next to it ("basket").
  */
 function consonant(target: string): SoundDefinition["place"] {
+  // An L right after an R sound ("girl", "early") is practiced as its own
+  // "RL" sound rather than as L.
+  const afterR = (before?: string) =>
+    target === "L" && (before === "R" || unstressed(before) === "ER");
   return (p) => {
     if (p[0] === target && isVowel(p[1])) return { position: "initial" };
     const last = p.length - 1;
@@ -51,7 +71,7 @@ function consonant(target: string): SoundDefinition["place"] {
       isVowel(before) || (before === "R" && isVowel(p[last - 2]));
     // "AH0 L" is the L at the end of "apple", which isn't practiced as final L.
     const syllabicL = target === "L" && before === "AH0";
-    if (p[last] === target && afterVowel && !syllabicL) {
+    if (p[last] === target && afterVowel && !syllabicL && !afterR(before)) {
       return { position: "final" };
     }
     const medial = p.some(
@@ -61,7 +81,9 @@ function consonant(target: string): SoundDefinition["place"] {
         i < last &&
         p.slice(0, i).some(isVowel) &&
         p.slice(i + 1).some(isVowel) &&
-        (isVowel(p[i - 1]) || isVowel(p[i + 1])),
+        (isVowel(p[i - 1]) || isVowel(p[i + 1])) &&
+        !afterR(p[i - 1]) &&
+        (target !== "T" || clearT(p, i)),
     );
     if (medial) return { position: "medial" };
   };
@@ -193,7 +215,11 @@ const SOUNDS: SoundDefinition[] = [
 /** An ARASAAC picture and the part of speech of its matching keyword. */
 interface Picture {
   id: number;
-  /** ARASAAC keyword type: 2 noun, 3 verb, 4 adjective; others are rarer. */
+  /**
+   * ARASAAC keyword type: 2 noun, 3 verb, 4 adjective or adverb. The others
+   * are names and pronouns (1), social words like "hello" (5) and little words
+   * like "of" (6), which don't make picture cards.
+   */
   type: number;
   /** In ARASAAC's core vocabulary for communication boards: everyday words. */
   aac: boolean;
@@ -361,18 +387,65 @@ ${sections.join("\n")}
 
 /** Dale-Chall words that aren't right for children's practice cards. */
 const LEFT_OUT = new Set(
-  "beer blast blood breast bullet cigar clothing cluck crook damn death devil drove drunk gay gun gunpowder hell kill pistol pussy rifle single soldier splash tobacco ugly whisky wine".split(
+  "beer birth blast blood breast bullet cigar cigarette clothing cluck crazy crook dam damn death devil drove drunk gay grave graveyard gun gunpowder hell kill lice pistol prison pussy rifle single soldier splash tobacco ugly whisky wine".split(
     " ",
   ),
 );
 
 /**
+ * Dale-Chall words that are hard to show in a picture, so a child can't tell
+ * which word the card is for: ideas ("choice", "truth"), little words ("get",
+ * "very"), old-fashioned words ("watchman"), sound-alikes of a better card
+ * ("tale" for "tail", "wring" for "ring", "flour" for "flower") and words
+ * whose ARASAAC picture shows something else ("chilly" is a chili pepper).
+ */
+const HARD_TO_PICTURE = new Set(
+  `above address after afterwards again against age agree alive always anger
+  arrive as ask attack attend attention august author avenue awful because
+  before beggar beneath best bill blind both bother brake brightness burst
+  catch cause cell cent change charge chart cheat check childhood chill chilly
+  choice choose clerk click comfort company cost course cover crush danger
+  darkness darling dash deaf defeat defend den desire dew different direction
+  discover divide dust english enjoy even ever everything evil exchange faint
+  faith fast favorite fear figure file finish first flour foolish forget
+  forgive fortune fourth freedom gain gentleman get good goodness government
+  grove guess guide gulf handkerchief hang have heaven his host hunger hush if
+  improve instant invite january job join journey joy july june lane language
+  large law leave length level life lift list live lose lost luck manager
+  manger mischief much neither never nothing offer office often pansy past
+  paste pavement peace piece place pleasant please polish price protect raise
+  reach reason receive refuse rejoice remove return review rich rise rough
+  rubbish sack safe saint sap save savings schoolroom search season selfish
+  servant serve several shape share shear shears shepherd shoemaker shout show
+  shut sight sir size sole stiff stuff subject such suffer supper tale task tax
+  thanks thick think third thursday together touch trade trust truth tuesday
+  understand unfold unpleasant value very victory visit waste watchman weave
+  week wring wrong youth`.split(/\s+/),
+);
+
+/**
+ * Words left out of one pack only: "these" and "those" are fine for practicing
+ * TH, which has few other words, but not as Z cards.
+ */
+const NOT_IN: Record<string, string[]> = { z: ["these", "those"] };
+
+/**
  * Words whose best ARASAAC match isn't the picture children should see, and
  * the picture to use instead: "chest" matches a bare-chest anatomy drawing.
  */
-const PICTURE_FOR: Record<string, number> = { chest: 5966 };
+const PICTURE_FOR: Record<string, number> = {
+  chest: 5966,
+  // A gift, not a clock for "the present".
+  present: 25381,
+};
 
-const { words } = await loadPronunciations();
+/**
+ * Everyday words that aren't on the Dale-Chall list but that a pack needs:
+ * the list has no words that start with Z.
+ */
+const EXTRA_WORDS = "zebra zero zigzag zipper zoo zucchini".split(" ");
+
+const { words } = await loadPronunciations(EXTRA_WORDS);
 
 const ENDINGS: [string, string[][]][] = [
   ["s", [["S"], ["Z"], ["IH0", "Z"], ["AH0", "Z"]]],
@@ -413,7 +486,8 @@ function hasEnding(word: string, main: Pronunciation): boolean {
 const placed = SOUNDS.map((sound) => ({
   sound,
   words: [...words].flatMap(([word, [main, ...others]]) => {
-    if (LEFT_OUT.has(word)) return [];
+    if (LEFT_OUT.has(word) || HARD_TO_PICTURE.has(word)) return [];
+    if (NOT_IN[sound.id]?.includes(word)) return [];
     // Use each word's main pronunciation, e.g. "read" as R EH1 D.
     const placement = sound.place(main);
     if (!placement) return [];
@@ -445,6 +519,7 @@ for (const { sound, words: found } of placed) {
     for (const w of found.filter((w) => w.position === position)) {
       const candidate = { ...w, picture: pictures.get(w.word) ?? null };
       if (!candidate.picture) noPicture.push(candidate);
+      else if (![2, 3, 4].includes(candidate.picture.type)) continue;
       // "good-by" and "good-bye" share a picture; keep one.
       else if (!seen.has(candidate.picture.id)) {
         seen.add(candidate.picture.id);
