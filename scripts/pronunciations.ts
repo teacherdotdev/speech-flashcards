@@ -69,15 +69,19 @@ function compound(
   }
 }
 
-/** Every Dale-Chall word and its pronunciations, plus the words not found. */
-export async function loadPronunciations(): Promise<{
+/**
+ * Every Dale-Chall word and its pronunciations, plus the words not found.
+ * `extra` adds words that aren't on the list, such as "zoo".
+ */
+export async function loadPronunciations(extra: string[] = []): Promise<{
   words: Map<string, Pronunciation[]>;
   missing: string[];
 }> {
   const dictionary = await loadCmudict();
   const words = new Map<string, Pronunciation[]>();
   const missing: string[] = [];
-  for (const line of (await download("dale-chall.txt")).split("\n")) {
+  const list = (await download("dale-chall.txt")).split("\n");
+  for (const line of [...list, ...extra]) {
     const word = line.trim().toLowerCase();
     if (!word) continue;
     const pronunciations = dictionary.get(word) ?? compound(word, dictionary);

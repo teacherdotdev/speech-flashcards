@@ -17,17 +17,17 @@ export const rBlends: SoundPack = {
       { word: "fruit", pictogram: 28339 }, // fr
       { word: "grass", pictogram: 3113 }, // gr
       { word: "prize", pictogram: 26845 }, // pr
-      { word: "trade", pictogram: 6652 }, // tr
       { word: "tree", pictogram: 3057 }, // tr
       { word: "trip", pictogram: 32508 }, // tr
       { word: "trunk", pictogram: 7819 }, // tr
       { word: "breakfast", pictogram: 4626 }, // br
-      { word: "brightness", pictogram: 8619 }, // br
       { word: "drawing", pictogram: 11238 }, // dr
       { word: "friday", pictogram: 37726 }, // fr
       { word: "grandma", pictogram: 23710 }, // gr
-      { word: "prison", pictogram: 32430 }, // pr
-      // Also: grandfather, brain, brake, branch, brick, bride, broom, crank, cream, crowd, crown, drawer, dream, drip, frame, french, front, frost, grapes, grave, grind, ground, grove, prayer, price, prince, thread, throat, throne, track, train, tray, truck, bracelet, brother, cracker, driver, freedom, friendship, grandchild, grandstand, grapefruit, graveyard, princess, treasure, trolley, dressmaker, granddaughter, grasshopper, tricycle, break, bring, crash, cry, draw, dress, drink, drive, drop, dry, throw, trick, breathe, crack, crawl, croak, cross, crush, drain, drill, drown, freeze, fry, grab, graze, greet, group, grow, pray, prick, print, prune, trace, trap, treat, trust, try, christen, crumble, frighten, prepare, promise, protect, great, green, broken, pretty, brave, brown, free, fried, gray, proud, three, true, crazy, crowded, from, through, christmas
+      { word: "grandfather", pictogram: 23718 }, // gr
+      { word: "brain", pictogram: 2696 }, // br
+      { word: "branch", pictogram: 7224 }, // br
+      // Also: brick, bride, broom, crank, cream, crowd, crown, drawer, dream, drip, frame, french, front, frost, grapes, grind, ground, prayer, prince, thread, throat, throne, track, train, tray, truck, bracelet, brother, cracker, driver, friendship, grandchild, grandstand, grapefruit, princess, treasure, trolley, dressmaker, granddaughter, grasshopper, tricycle, break, bring, crash, cry, draw, dress, drink, drive, drop, dry, throw, trick, breathe, crack, crawl, croak, cross, drain, drill, drown, freeze, fry, grab, graze, greet, group, grow, pray, prick, print, prune, trace, trap, treat, try, christen, crumble, frighten, prepare, promise, great, green, broken, pretty, brave, brown, free, fried, gray, proud, three, true, crowded
     ],
   },
 };

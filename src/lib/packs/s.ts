@@ -23,11 +23,11 @@ export const s: SoundPack = {
       { word: "sister", pictogram: 2422 },
       { word: "sofa", pictogram: 25479 },
       { word: "summer", pictogram: 5604 },
-      { word: "supper", pictogram: 4592 },
-      { word: "cell", pictogram: 36340 },
-      { word: "cent", pictogram: 4775 },
-      { word: "sack", pictogram: 6210 },
-      // Also: safe, saint, sand, sap, seat, seed, sight, sir, size, sole, son, soul, sound, suit, sword, ceiling, cellar, center, saddle, sadness, sailboat, sailor, savings, seesaw, servant, sickness, sidewalk, silence, singer, sitting, soda, sunrise, cereal, cigarette, settlement, sunflower, say, search, see, sell, sew, sing, sit, soak, soap, select, sail, save, saw, seek, send, sense, serve, set, sign, sink, sip, soil, sort, suck, season, settle, subject, suffer, surprise, separate, sad, same, sick, soft, several, six, sixth, so, some, second, selfish, seven, simple, sixteen, sixty, sometimes, sunny, seventeen, seventy, sun, sorry, sunday, saturday, september, since, south, somebody
+      { word: "sand", pictogram: 4565 },
+      { word: "seat", pictogram: 19520 },
+      { word: "seed", pictogram: 8689 },
+      { word: "son", pictogram: 9887 },
+      // Also: soul, sound, suit, sword, ceiling, cellar, center, saddle, sadness, sailboat, sailor, seesaw, sickness, sidewalk, silence, singer, sitting, soda, sunrise, cereal, settlement, sunflower, say, see, sell, sew, sing, sit, soak, soap, select, sail, saw, seek, send, sense, set, sign, sink, sip, soil, sort, suck, settle, surprise, separate, sad, same, sick, soft, six, sixth, so, some, second, seven, simple, sixteen, sixty, sometimes, sunny, seventeen, seventy
     ],
     medial: [
       { word: "basket", pictogram: 3012 },
@@ -50,7 +50,7 @@ export const s: SoundPack = {
       { word: "castle", pictogram: 5422 },
       { word: "classmate", pictogram: 39421 },
       { word: "custard", pictogram: 6644 },
-      // Also: dancer, grandson, hillside, housework, insect, mischief, postman, rooster, teaspoon, whistle, dressmaker, eraser, gasoline, grasshopper, passenger, pussycat, tricycle, electricity, answer, decide, dislike, listen, accept, christen, destroy, escape, fasten, insult, whisper, discover, understand, inside, outside, yesterday, absent, misty, thirsty, excited, december, herself, himself, itself, history, ourselves
+      // Also: dancer, grandson, hillside, housework, insect, postman, rooster, teaspoon, whistle, dressmaker, eraser, gasoline, grasshopper, passenger, pussycat, tricycle, electricity, answer, decide, dislike, listen, accept, christen, destroy, escape, fasten, insult, whisper, inside, outside, yesterday, absent, misty, thirsty, excited
     ],
     final: [
       { word: "bus", pictogram: 2262 },
@@ -61,19 +61,19 @@ export const s: SoundPack = {
       { word: "house", pictogram: 6964 },
       { word: "juice", pictogram: 11461 },
       { word: "nurse", pictogram: 6050 },
-      { word: "place", pictogram: 9819 },
-      { word: "brightness", pictogram: 8619 },
       { word: "mattress", pictogram: 8078 },
       { word: "police", pictogram: 37367 },
-      { word: "choice", pictogram: 14670 },
-      { word: "course", pictogram: 23404 },
       { word: "gas", pictogram: 25129 },
       { word: "goose", pictogram: 2878 },
       { word: "ice", pictogram: 7128 },
       { word: "lace", pictogram: 15363 },
-      { word: "lice", pictogram: 4720 },
       { word: "moose", pictogram: 8010 },
-      // Also: moss, mouse, peace, piece, price, purse, race, rice, slice, space, address, chorus, darkness, goodness, henhouse, lettuce, office, palace, playhouse, princess, recess, schoolhouse, tennis, fireplace, happiness, dress, kiss, pass, toss, undress, bless, chase, cross, guess, mess, miss, trace, dismiss, erase, promise, rejoice, yes, less, nice, this, twice, us, across, christmas
+      { word: "moss", pictogram: 28843 },
+      { word: "mouse", pictogram: 2546 },
+      { word: "purse", pictogram: 4698 },
+      { word: "race", pictogram: 21498 },
+      { word: "rice", pictogram: 6911 },
+      // Also: slice, space, chorus, henhouse, kindness, lettuce, palace, playhouse, princess, recess, schoolhouse, tennis, fireplace, happiness, dress, kiss, pass, toss, undress, bless, chase, cross, mess, miss, trace, dismiss, erase, promise, yes, less, nice, this, twice
     ],
   },
 };

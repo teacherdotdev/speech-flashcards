@@ -7,7 +7,6 @@ export const t: SoundPack = {
   name: "T",
   cards: {
     initial: [
-      { word: "tale", pictogram: 2364 },
       { word: "teeth", pictogram: 2737 },
       { word: "tie", pictogram: 4614 },
       { word: "tongue", pictogram: 2944 },
@@ -26,31 +25,32 @@ export const t: SoundPack = {
       { word: "tank", pictogram: 3400 },
       { word: "tap", pictogram: 2414 },
       { word: "tape", pictogram: 15357 },
-      { word: "tax", pictogram: 35449 },
-      // Also: tea, team, tear, tent, tin, tip, tool, tooth, top, tow, tub, tug, tailor, teacher, teaspoon, tennis, tire, toothbrush, toothpick, tower, tulip, tunnel, turkey, turtle, tablecloth, take, talk, task, tell, toast, toss, touch, tack, tame, tan, teach, test, till, turn, tickle, tiptoe, tall, too, tiny, tired, today, together, tomorrow, ten, two, terrible, time, to, towards
+      { word: "tea", pictogram: 29802 },
+      { word: "team", pictogram: 15264 },
+      // Also: tear, tent, tin, tip, tool, tooth, top, tow, tub, tug, tailor, teacher, teaspoon, tennis, tire, toothbrush, toothpick, tower, tulip, tunnel, turkey, turtle, tablecloth, take, talk, tell, toast, toss, tack, tame, tan, teach, test, till, turn, tickle, tiptoe, tall, too, tiny, tired, today, tomorrow, ten, two, terrible
     ],
     medial: [
-      { word: "auto", pictogram: 2339 },
-      { word: "autumn", pictogram: 5531 },
-      { word: "brightness", pictogram: 8619 },
-      { word: "butter", pictogram: 2461 },
-      { word: "button", pictogram: 2668 },
-      { word: "city", pictogram: 2704 },
       { word: "daytime", pictogram: 26799 },
       { word: "hotel", pictogram: 15730 },
-      { word: "kitty", pictogram: 7114 },
-      { word: "letter", pictogram: 2688 },
-      { word: "lightning", pictogram: 34545 },
       { word: "mattress", pictogram: 8078 },
-      { word: "metal", pictogram: 6148 },
-      { word: "mountain", pictogram: 2909 },
       { word: "necktie", pictogram: 4614 },
       { word: "sister", pictogram: 2422 },
-      { word: "sweater", pictogram: 2436 },
-      { word: "water", pictogram: 32464 },
-      { word: "winter", pictogram: 5493 },
-      { word: "writing", pictogram: 2380 },
-      // Also: afternoon, butterfly, hospital, potato, theater, vegetable, waterproof, artist, bathtub, battle, beefsteak, bottle, bottom, captain, cattle, cottage, cotton, counter, curtain, custard, daughter, doctor, duty, football, footprint, fountain, grandstand, hunter, instant, kettle, kitten, lettuce, meeting, mitten, nightgown, painter, painting, party, platform, platter, quarter, rattle, rooster, sitting, skater, attention, candlestick, capital, carpenter, conductor, factory, granddaughter, settlement, alligator, caterpillar, watermelon, electricity, return, attack, attend, flutter, frighten, protect, settle, multiply, understand, after, empty, little, outside, pretty, beautiful, yesterday, better, bitter, dirty, eighteen, eighty, fifteen, fifty, forty, fourteen, misty, nineteen, ninety, rotten, sixteen, sixty, sometimes, thirsty, thirteen, excited, important, seventeen, between, october, saturday, september, itself, until
+      { word: "afternoon", pictogram: 7268 },
+      { word: "potato", pictogram: 2503 },
+      { word: "vegetable", pictogram: 29131 },
+      { word: "bathtub", pictogram: 2272 },
+      { word: "beefsteak", pictogram: 35759 },
+      { word: "captain", pictogram: 24937 },
+      { word: "custard", pictogram: 6644 },
+      { word: "doctor", pictogram: 2467 },
+      { word: "grandstand", pictogram: 24787 },
+      { word: "rooster", pictogram: 2404 },
+      { word: "candlestick", pictogram: 6958 },
+      { word: "conductor", pictogram: 3094 },
+      { word: "factory", pictogram: 35393 },
+      { word: "multiply", pictogram: 5798 },
+      { word: "empty", pictogram: 26527 },
+      // Also: yesterday, eighteen, fifteen, fifty, fourteen, misty, nineteen, sixteen, sixty, sometimes, thirsty, thirteen, seventeen
     ],
     final: [
       { word: "boat", pictogram: 6932 },
@@ -73,7 +73,7 @@ export const t: SoundPack = {
       { word: "airport", pictogram: 6031 },
       { word: "basket", pictogram: 3012 },
       { word: "blanket", pictogram: 2459 },
-      // Also: chocolate, jacket, market, minute, pocket, rabbit, rocket, bat, beet, bit, boot, cart, chart, cot, court, dart, feet, flat, fort, gate, hat, height, hut, kite, mat, net, note, nut, pet, pit, pot, rat, route, seat, sight, skate, start, suit, throat, wheat, biscuit, bracelet, bucket, carpet, carrot, classmate, closet, desert, flashlight, grapefruit, helmet, peanut, sailboat, sweetheart, walnut, cabinet, cigarette, coconut, pussycat, violet, beat, cheat, cut, eat, fight, get, put, shout, shut, sit, wait, wet, write, forget, invite, visit, bet, bite, butt, fit, float, greet, hate, heat, hit, hurt, knit, knot, set, shoot, sort, spit, spot, state, sweat, treat, vote, comfort, defeat, exit, repeat, report, separate, cute, fat, great, short, sweet, white, eight, hot, late, lit, out, right, straight, that, barefoot, quiet, favorite, what, at, but, date, it, without
+      // Also: chocolate, jacket, market, minute, pocket, rabbit, rocket, bat, beet, bit, boot, cart, cot, court, dart, feet, flat, fort, gate, hat, height, hut, kite, mat, net, note, nut, pet, pit, pot, rat, route, seat, skate, start, suit, throat, wheat, biscuit, bracelet, bucket, carpet, carrot, classmate, closet, desert, flashlight, grapefruit, helmet, peanut, sailboat, sweetheart, walnut, cabinet, coconut, pussycat, violet, beat, cut, eat, fight, put, sit, wait, wet, write, bet, bite, butt, fit, float, greet, hate, heat, hit, hurt, knit, knot, set, shoot, sort, spit, spot, state, sweat, treat, vote, exit, repeat, report, separate, cute, fat, great, short, sweet, white, eight, hot, late, lit, out, right, straight, that, barefoot, quiet
     ],
   },
 };

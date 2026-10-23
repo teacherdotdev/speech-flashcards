@@ -11,23 +11,23 @@ export const lBlends: SoundPack = {
       { word: "flame", pictogram: 4654 }, // fl
       { word: "glass", pictogram: 2610 }, // gl
       { word: "glue", pictogram: 2709 }, // gl
-      { word: "place", pictogram: 9819 }, // pl
       { word: "plant", pictogram: 3143 }, // pl
       { word: "plate", pictogram: 16857 }, // pl
       { word: "sled", pictogram: 8710 }, // sl
       { word: "blackboard", pictogram: 2526 }, // bl
       { word: "blanket", pictogram: 2459 }, // bl
       { word: "classroom", pictogram: 9815 }, // kl
-      { word: "flour", pictogram: 8600 }, // fl
       { word: "flower", pictogram: 7104 }, // fl
       { word: "glasses", pictogram: 3329 }, // gl
       { word: "playground", pictogram: 2859 }, // pl
-      { word: "blind", pictogram: 4600 }, // bl
       { word: "claw", pictogram: 5477 }, // kl
       { word: "clay", pictogram: 5908 }, // kl
-      { word: "clerk", pictogram: 31756 }, // kl
-      { word: "click", pictogram: 9860 }, // kl
-      // Also: cliff, cloak, clock, cloth, clown, club, flag, flat, flea, flock, flood, floor, glance, glove, plain, plane, plug, plum, sleeve, slice, slide, sling, blacksmith, blessing, classmate, cleaner, closet, clover, flashlight, flip-flop, platform, platter, player, playhouse, slipper, blueberry, blow, cloud, flash, fly, play, sleep, blame, bleed, bless, block, clap, climb, flap, float, glide, plan, plow, slip, flutter, black, blue, clean, clear, close, slow, cloudy, pleasant, please
+      { word: "cliff", pictogram: 8007 }, // kl
+      { word: "cloak", pictogram: 36003 }, // kl
+      { word: "clock", pictogram: 5561 }, // kl
+      { word: "cloth", pictogram: 34862 }, // kl
+      { word: "clown", pictogram: 2854 }, // kl
+      // Also: club, flag, flat, flea, flock, flood, floor, glance, glove, plain, plane, plug, plum, sleeve, slice, slide, sling, blacksmith, blessing, classmate, cleaner, closet, clover, flashlight, flip-flop, platform, platter, player, playhouse, slipper, blueberry, blow, cloud, flash, fly, play, sleep, blame, bleed, bless, block, clap, climb, flap, float, glide, plan, plow, slip, flutter, black, blue, clean, clear, close, slow, cloudy
     ],
   },
 };

@@ -22,35 +22,31 @@ export const sBlends: SoundPack = {
       { word: "street", pictogram: 2299 }, // str
       { word: "swing", pictogram: 4608 }, // sw
       { word: "switch", pictogram: 6195 }, // sw
-      { word: "schoolroom", pictogram: 9815 }, // sk
       { word: "spider", pictogram: 38275 }, // sp
       { word: "squirrel", pictogram: 25815 }, // skw
       { word: "station", pictogram: 29905 }, // st
       { word: "sweater", pictogram: 2436 }, // sw
-      // Also: strawberry, scales, scrap, screen, screw, skate, sky, sleeve, slice, slide, sling, smoke, sneeze, space, spade, spear, speech, speed, spike, spoke, stage, stair, stall, stamp, star, start, states, steak, stem, step, stole, stone, stool, stork, stove, strap, straw, stream, strip, stuff, swamp, swan, schoolhouse, skater, slipper, snowflake, sparrow, speaker, spinach, stable, stocking, story, swallow, sweetheart, swimming, ski, sleep, smell, smile, snow, speak, stand, stitch, stop, swim, study, scare, score, scrape, scratch, scream, scrub, skip, slip, snap, spill, spit, spot, spread, squash, squeeze, state, steal, steam, stir, stretch, string, swear, sweat, sweep, sprinkle, slow, small, smooth, strange, strong, sweet, stiff, straight, swift, snowy, sticky, stormy
+      { word: "strawberry", pictogram: 2400 }, // str
+      // Also: scales, scrap, screen, screw, skate, sky, sleeve, slice, slide, sling, smoke, sneeze, space, spade, spear, speech, speed, spike, spoke, stage, stair, stall, stamp, star, start, states, steak, stem, step, stole, stone, stool, stork, stove, strap, straw, stream, strip, swamp, swan, schoolhouse, skater, slipper, snowflake, sparrow, speaker, spinach, stable, stocking, story, swallow, sweetheart, swimming, ski, sleep, smell, smile, snow, speak, stand, stitch, stop, swim, study, scare, score, scrape, scratch, scream, scrub, skip, slip, snap, spill, spit, spot, spread, squash, squeeze, state, steal, steam, stir, stretch, string, swear, sweat, sweep, sprinkle, slow, small, smooth, strange, strong, sweet, straight, swift, snowy, sticky, stormy
     ],
     final: [
       { word: "post", pictogram: 32540 }, // st
       { word: "breakfast", pictogram: 4626 }, // st
       { word: "forest", pictogram: 2666 }, // st
-      { word: "burst", pictogram: 30956 }, // st
       { word: "chest", pictogram: 5966 }, // st
       { word: "coast", pictogram: 2826 }, // st
-      { word: "cost", pictogram: 9874 }, // st
       { word: "feast", pictogram: 37517 }, // st
       { word: "fist", pictogram: 16865 }, // st
       { word: "frost", pictogram: 25153 }, // st
-      { word: "host", pictogram: 38679 }, // st
-      { word: "list", pictogram: 7144 }, // st
       { word: "mask", pictogram: 5904 }, // sk
       { word: "nest", pictogram: 7173 }, // st
       { word: "roast", pictogram: 5389 }, // st
-      { word: "waste", pictogram: 26388 }, // st
       { word: "artist", pictogram: 34767 }, // st
       { word: "dentist", pictogram: 2733 }, // st
       { word: "harvest", pictogram: 7227 }, // st
-      { word: "ask", pictogram: 9847 }, // sk
-      // Also: paste, rest, task, toast, dust, fast, test, trust, first, best, lost, past, august, east, west
+      { word: "rest", pictogram: 16643 }, // st
+      { word: "toast", pictogram: 17330 }, // st
+      { word: "test", pictogram: 28825 }, // st
     ],
   },
 };
