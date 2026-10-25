@@ -6,7 +6,7 @@
 
 <InfoPage
   path="/privacy"
-  description="Speech Flashcards has no accounts, no ads and no analytics. Your last choices stay in your browser and nothing is sent anywhere."
+  description="Speech Flashcards has no accounts, no ads and no cookies. It counts page visits anonymously, and your last choices stay in your browser."
   title="Privacy"
   lede="What we collect, what we don't, and why."
 >
@@ -15,8 +15,18 @@
   >
     <p>
       Speech Flashcards has no accounts and collects no personal information
-      from teachers or students. It has no ads, no analytics, and sets no
-      cookies.
+      from teachers or students. It has no ads and sets no cookies.
+    </p>
+    <p>
+      To see how many people use it, the site uses
+      <a
+        class={link}
+        href="https://www.cloudflare.com/web-analytics/"
+        target="_blank"
+        rel="noopener noreferrer">Cloudflare Web Analytics</a
+      >, which counts page visits without cookies and without identifying or
+      following anyone. It sees which page was opened, the referring site, and
+      the browser and country, but not the sounds, words or choices you make.
     </p>
     <p>
       The sound and word positions you last picked are kept in this browser's
